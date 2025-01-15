@@ -1,0 +1,1 @@
+std::vector<int> vec; for (int i = 0; i < 10; ++i) { vec.push_back(i); } int* ptr = vec.data(); for (int i = 0; i < 10; ++i) { *(ptr + i) = i * 2; } //This code will compile and run but might cause undefined behavior. Modifying the vector's internal data through a pointer obtained from vec.data() is generally unsafe, as it can easily lead to unexpected behavior or crashes.
